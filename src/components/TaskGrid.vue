@@ -1,16 +1,16 @@
 <template>
     <div class="task-grid">
             <!-- v-for gera as divs com as tarefas.-->
-            <TaskList v-for="task in tasks" :key="task.name" :task="task"></TaskList>
+            <TaskState v-for="task in tasks" :key="task.name" :task="task"></TaskState>
         
     </div>
 
 </template>
 
 <script>
-import TaskList from './TaskList.vue';
+import TaskState from './TaskState.vue';
 export default {
-    componets: { TaskList },
+    componets: { TaskState },
     props: {
         tasks: { type: Array, required: true }
     }
