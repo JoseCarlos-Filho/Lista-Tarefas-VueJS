@@ -1,7 +1,6 @@
 <template>
     <!-- nesta div é chamada a propriendade computada stateClass -->
-    <div class="task-state" 
-    :class="stateClass">
+    <div class="task-state" :class="stateClass">
         <!-- Interpolação da tarefa posteriormente tratada como objeto em props -->
         <p>{{ task.name }}</p>
     </div>
@@ -10,7 +9,7 @@
 <script>
 export default {
     props: { 
-        task: { type: Object, required: true }
+        task: { type: Object, required: true },
     },
     computed: {
         stateClass() {

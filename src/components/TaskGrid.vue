@@ -1,7 +1,7 @@
 <template>
     <div class="task-grid">
-            <!-- v-for gera as divs com as tarefas.-->
-            <TaskState v-for="task in tasks" :key="task.name" :task="task"></TaskState>
+        <!-- v-for gera as divs com as tarefas.-->
+        <TaskState v-for="task in tasks" :key="task.name" :task="{task}"></TaskState>
         
     </div>
 
